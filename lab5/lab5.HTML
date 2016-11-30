@@ -1,0 +1,51 @@
+<html>
+<script>
+var x,y,z;
+function Addition(){
+num3.value = 0;
+x=parseFloat(num1.value);
+y=parseFloat(num2.value);
+z=x+y;
+num3.value=z;
+}
+
+function Subtraction(){
+num3.value = 0;
+x=parseFloat(num1.value);
+y=parseFloat(num2.value);
+z=x-y;
+num3.value=z;
+}
+
+function Multiplication(){
+num3.value = 0;
+x=parseFloat(num1.value);
+y=parseFloat(num2.value);
+z=x*y;
+num3.value=z;
+}
+
+function Modulus(){
+num3.value = 0;
+x=parseFloat(num1.value);
+y=parseFloat(num2.value);
+z=x%y;
+num3.value=z;
+}
+
+</script>
+<body>
+<center><h1> ARTHMATIC OPERATIONS</h1>
+<form name="shery">
+
+Enter First Number:<input type="number" id="num1"><br><br>
+Enter Second Number:<input type="number" id="num2"><br><br>
+<input type="button" value="Addition" onClick="Addition()">
+<input type="button" value="Subtraction" onClick="Subtraction()">
+<input type="button" value="Multiplication" onClick="Multiplication()">
+<input type="button" value="Modulus" onClick="Modulus()">
+<br><br>
+Result is : <input type="number" id="num3">
+
+</body>
+</html>
