@@ -1,0 +1,29 @@
+<html>
+<script>
+var x;
+function isPrime(num) {
+    if(num < 2){ return 0;}
+    for (var i = 2; i < num; i++) {
+        if(num%i==0){ return 0;}
+    }
+    return 1;
+}
+function myFunction() {
+x=parseFloat(num1.value);
+var check = isPrime(x)
+if(check == 1)
+{
+	alert("This Is Prime Number : "+x);
+}
+ else{
+	alert("This Is Not Prime Number : "+x);
+}   
+num1.value="";
+}
+</script>
+<body>
+<center><h1> Check Prime Number</h1>
+Enter Number:<input type="number" id="num1"><br><br>
+<input type="button" value="Addition" onClick="myFunction()"><br><br>
+</body>
+</html>
